@@ -1,0 +1,9 @@
+name: Deploy ADF
+on:
+  push:
+   branches: main
+jobs:
+   Azure-Login:
+     runs-on: ubuntu-latest
+     steps:
+       - run: az --version
